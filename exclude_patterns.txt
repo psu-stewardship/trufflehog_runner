@@ -1,0 +1,12 @@
+# Exclude paths with no threat of secrets
+# Must be regexes that match full path
+
+# Anyone may add patterns for other systems.
+# Add a comment above your list of patterns with the name of your system.
+
+# ETDA Workflow
+node_modules\/(.*\/)?.*
+public\/packs(-test)?\/(.*\/)?.*
+yarn.lock
+Gemfile.lock
+package-lock.json
